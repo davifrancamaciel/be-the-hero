@@ -2,8 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const routes = require('./routes')
 const { errors } = require('celebrate')
+const { PORT } = require('../src/consts') 
 
-const port = 3333
 //iniciando a isntacia da aplicacao
 const app = express()
 
@@ -13,4 +13,4 @@ app.use(routes)
 app.use(errors())
 
 module.exports = app
-console.log(`BACKEND rodando na porta ${port}`)
+console.log(`BACKEND rodando na porta ${PORT}`)

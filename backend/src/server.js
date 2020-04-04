@@ -1,2 +1,3 @@
 const app = require('./app')
-app.listen(port)
+const { PORT } = require('../src/consts')
+app.listen(PORT)
