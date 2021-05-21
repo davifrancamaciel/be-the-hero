@@ -7,13 +7,15 @@ import NewIncident from './pages/NewIncident'
 
 export default function Routes () {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path='/' component={Logon} exact />
-        <Route path='/register' component={Register} />
-        <Route path='/profile' component={Profile} />
-        <Route path='/incidents/new' component={NewIncident} />
-      </Switch>
-    </BrowserRouter>
+    
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' component={Logon} exact />
+          <Route path='/register' component={Register} />
+          <Route path='/profile' component={Profile} />
+          <Route path='/incidents/new' component={NewIncident} />
+        </Switch>
+      </BrowserRouter>      
+   
   )
 }
